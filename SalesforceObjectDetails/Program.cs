@@ -11,8 +11,9 @@ namespace SalesforceObjectDetails
     internal class Program
     {
         private static bool completedObject = false;
+        private static string inputDirectory = "C:\\Users\\User\\Documents\\VScode\\sandbox\\force-app\\main\\default\\objects\\";
+        private static string outputDircetory;
         private static SFObject sFObject;
-        private static string FilePath = "C:\\Users\\User\\Documents\\VScode\\sandbox\\force-app\\main\\default\\objects\\";
         private static List<SFObject> sFObjectsList;
 
         /// <summary>
@@ -65,11 +66,105 @@ namespace SalesforceObjectDetails
 
             var result = encoding.GetString(memoryStream.ToArray());
             Console.WriteLine(result);
-            //Completed CSV drop off location and file name
-            string fileLocation = Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + Path.DirectorySeparatorChar;
-            string filename = "Salesforce Object Details_" + DateTime.Now.Day + "_" + DateTime.Now.Month + "_" + DateTime.Now.Year;
             //Create file
-            File.WriteAllText(path: fileLocation + filename + ".csv", contents: result);
+            File.WriteAllText(path: outputDircetory + "Field Properties" + ".csv", contents: result);
+        }
+
+        /// <summary>
+        /// Creates the lookup CSV.
+        /// </summary>
+        /// <param name="list"> The list. </param>
+        private static void CreateLookupCSV(List<SFObject> list)
+        {
+            //Set up CSV object and csv settings
+            using var memoryStream = new MemoryStream();
+            Encoding encoding = GetEncoding();
+            using StreamWriter writer = new StreamWriter(memoryStream, encoding);
+            using CsvWriter csvWriter = new CsvWriter(writer, System.Globalization.CultureInfo.CurrentCulture);
+            csvWriter.Configuration.Delimiter = ",";
+            csvWriter.Configuration.HasHeaderRecord = true;
+
+            //Build Headers
+            csvWriter.WriteField("Object Name");
+            csvWriter.WriteField("Object API Name");
+            csvWriter.WriteField("Lookup");
+
+            csvWriter.NextRecord();
+            //Build csv rows for each Salesforce Object and Field Properties
+            foreach (SFObject sf in list)
+            {
+                foreach (string lookUp in sf.LookUps)
+                {
+                    csvWriter.WriteField(sf.NAME);
+                    csvWriter.WriteField(sf.NAMEAPI);
+                    csvWriter.WriteField(lookUp);
+                    csvWriter.NextRecord();
+                }
+            }
+            writer.Flush();
+
+            var result = encoding.GetString(memoryStream.ToArray());
+            Console.WriteLine(result);
+            //Create file
+            File.WriteAllText(path: outputDircetory + "Lookup" + ".csv", contents: result);
+        }
+
+        /// <summary>
+        /// Creates the output folder that will contain the csv files.
+        /// </summary>
+        /// <returns> outputDirectory </returns>
+        private static string createOutputFolder()
+        {
+            string outputFolder = "Salesforce Object Details_" + DateTime.Now.Day + "_" + DateTime.Now.Month + "_" + DateTime.Now.Year;
+            string outputDir = Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + Path.DirectorySeparatorChar;
+            if (!System.IO.Directory.Exists(outputDir + outputFolder))
+            {
+                System.IO.Directory.CreateDirectory(outputDir + outputFolder);
+            }
+            return outputDir + outputFolder + Path.DirectorySeparatorChar;
+        }
+
+        /// <summary>
+        /// Creates the record types CSV.
+        /// </summary>
+        /// <param name="list"> The list. </param>
+        private static void CreateRecordTypesCSV(List<SFObject> list)
+        {
+            //Set up CSV object and csv settings
+            using var memoryStream = new MemoryStream();
+            Encoding encoding = GetEncoding();
+            using StreamWriter writer = new StreamWriter(memoryStream, encoding);
+            using CsvWriter csvWriter = new CsvWriter(writer, System.Globalization.CultureInfo.CurrentCulture);
+            csvWriter.Configuration.Delimiter = ",";
+            csvWriter.Configuration.HasHeaderRecord = true;
+
+            //Build Headers
+            csvWriter.WriteField("Object Name");
+            csvWriter.WriteField("Object API Name");
+            csvWriter.WriteField("RecordType Name");
+            csvWriter.WriteField("RecordType API Name");
+            csvWriter.WriteField("Description");
+
+            csvWriter.NextRecord();
+            //Build csv rows for each Salesforce Object and Field Properties
+            foreach (SFObject sf in list)
+            {
+                foreach (RecordType rt in sf.RecordTypes)
+                {
+                    csvWriter.WriteField(sf.NAME);
+                    csvWriter.WriteField(sf.NAMEAPI);
+                    csvWriter.WriteField(rt.Name);
+                    csvWriter.WriteField(rt.FullNameAPI);
+                    csvWriter.WriteField(rt.Description);
+                    csvWriter.NextRecord();
+                }
+            }
+            writer.Flush();
+
+            var result = encoding.GetString(memoryStream.ToArray());
+            Console.WriteLine(result);
+            //Create file
+            File.WriteAllText(path: outputDircetory + "RecordType" + ".csv", contents: result);
         }
 
         /// <summary>
@@ -211,24 +306,27 @@ namespace SalesforceObjectDetails
         /// <param name="args"> The arguments. </param>
         private static void Main(string[] args)
         {
+            outputDircetory = createOutputFolder();
             sFObjectsList = new List<SFObject>();
             sFObject = new SFObject("", "");
             //Get File Path to the Object Folder in Salesforce then if the path does does contain the ending slash "\" then added it.
-            Console.WriteLine("Please enter a file path the Salesforce object folder\nExample Shown Below\n{0}\nEnter Path: ", FilePath);
-            FilePath = Console.ReadLine();
-            FilePath = (FilePath[FilePath.Length - 1] == Path.DirectorySeparatorChar) ? FilePath : FilePath + Path.DirectorySeparatorChar;
+            Console.WriteLine("Please enter a file path the Salesforce object folder\nExample Shown Below\n{0}\nEnter Path: ", inputDirectory);
+            inputDirectory = Console.ReadLine();
+            inputDirectory = (inputDirectory[inputDirectory.Length - 1] == Path.DirectorySeparatorChar) ? inputDirectory : inputDirectory + Path.DirectorySeparatorChar;
             //Check if the Dir
-            if (Directory.Exists(FilePath))
+            if (Directory.Exists(inputDirectory))
             {
                 // This path is a directory
-                ProcessDirectory(FilePath);
+                ProcessDirectory(inputDirectory);
                 //After gathering all the Salesforce Object create the CSV on the desktop
                 CreateFieldPropertiesCSV(sFObjectsList);
+                CreateLookupCSV(sFObjectsList);
+                CreateRecordTypesCSV(sFObjectsList);
             }
             else
             {
                 //Display Error message then wait for response
-                Console.WriteLine("{0} is not a valid file or directory.", FilePath);
+                Console.WriteLine("{0} is not a valid file or directory.", inputDirectory);
                 Console.ReadKey();
             }
         }
