@@ -1,0 +1,13 @@
+C:\Users\Chris\source\repos\SalesforceObjectDetails\SalesforceObjectDetails\bin\Release\netcoreapp3.1\SalesforceObjectDetails.exe
+C:\Users\Chris\source\repos\SalesforceObjectDetails\SalesforceObjectDetails\bin\Release\netcoreapp3.1\SalesforceObjectDetails.deps.json
+C:\Users\Chris\source\repos\SalesforceObjectDetails\SalesforceObjectDetails\bin\Release\netcoreapp3.1\SalesforceObjectDetails.runtimeconfig.json
+C:\Users\Chris\source\repos\SalesforceObjectDetails\SalesforceObjectDetails\bin\Release\netcoreapp3.1\SalesforceObjectDetails.runtimeconfig.dev.json
+C:\Users\Chris\source\repos\SalesforceObjectDetails\SalesforceObjectDetails\bin\Release\netcoreapp3.1\SalesforceObjectDetails.dll
+C:\Users\Chris\source\repos\SalesforceObjectDetails\SalesforceObjectDetails\bin\Release\netcoreapp3.1\SalesforceObjectDetails.pdb
+C:\Users\Chris\source\repos\SalesforceObjectDetails\SalesforceObjectDetails\bin\Release\netcoreapp3.1\CsvHelper.dll
+C:\Users\Chris\source\repos\SalesforceObjectDetails\SalesforceObjectDetails\obj\Release\netcoreapp3.1\SalesforceObjectDetails.csprojAssemblyReference.cache
+C:\Users\Chris\source\repos\SalesforceObjectDetails\SalesforceObjectDetails\obj\Release\netcoreapp3.1\SalesforceObjectDetails.AssemblyInfoInputs.cache
+C:\Users\Chris\source\repos\SalesforceObjectDetails\SalesforceObjectDetails\obj\Release\netcoreapp3.1\SalesforceObjectDetails.AssemblyInfo.cs
+C:\Users\Chris\source\repos\SalesforceObjectDetails\SalesforceObjectDetails\obj\Release\netcoreapp3.1\SalesforceObjectDetails.csproj.CopyComplete
+C:\Users\Chris\source\repos\SalesforceObjectDetails\SalesforceObjectDetails\obj\Release\netcoreapp3.1\SalesforceObjectDetails.dll
+C:\Users\Chris\source\repos\SalesforceObjectDetails\SalesforceObjectDetails\obj\Release\netcoreapp3.1\SalesforceObjectDetails.pdb
