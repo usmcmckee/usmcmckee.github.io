@@ -1,6 +1,7 @@
 ﻿using CsvHelper;
 using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.IO;
 using System.Text;
 using System.Text.RegularExpressions;
@@ -15,6 +16,18 @@ namespace SalesforceObjectDetails
         private static string outputDircetory;
         private static SFObject sFObject;
         private static List<SFObject> sFObjectsList;
+
+        private static SalesforceClient CreateClient()
+        {
+            return new SalesforceClient
+            {
+                Username = ConfigurationManager.AppSettings["username"],
+                Password = ConfigurationManager.AppSettings["password"],
+                Token = ConfigurationManager.AppSettings["token"],
+                ClientId = ConfigurationManager.AppSettings["clientId"],
+                ClientSecret = ConfigurationManager.AppSettings["clientSecret"]
+            };
+        }
 
         /// <summary>
         /// Creates the field properties CSV.
@@ -306,6 +319,22 @@ namespace SalesforceObjectDetails
         /// <param name="args"> The arguments. </param>
         private static void Main(string[] args)
         {
+            var client = CreateClient();
+
+            if (args.Length > 0)
+            {
+                client.Login();
+                Console.WriteLine(client.Query(args[0]));
+            }
+            else
+            {
+                client.Login();
+                Console.WriteLine(client.Describe("Account"));
+                Console.WriteLine(client.Describe("Contact"));
+                Console.WriteLine(client.QueryEndpoints());
+                Console.WriteLine(client.Query("SELECT Name from Contact"));
+            }
+            Console.ReadLine();
             outputDircetory = createOutputFolder();
             sFObjectsList = new List<SFObject>();
             sFObject = new SFObject("", "");
