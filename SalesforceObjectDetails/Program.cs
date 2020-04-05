@@ -329,10 +329,18 @@ namespace SalesforceObjectDetails
             else
             {
                 client.Login();
-                Console.WriteLine(client.Describe("Account"));
-                Console.WriteLine(client.Describe("Contact"));
-                Console.WriteLine(client.QueryEndpoints());
-                Console.WriteLine(client.Query("SELECT Name from Contact"));
+                //Console.WriteLine(client.Describe("Account"));
+                string userQuery;
+                char response;
+                Console.WriteLine("Do you want to run a Query? (Y or N)");
+                response = char.ToUpper(Console.ReadKey().KeyChar);
+                Console.WriteLine("\nUser response was: {0}", response);
+                if (response == 'Y')
+                {
+                    Console.WriteLine("Please write you SQOL: ");
+                    userQuery = Console.ReadLine().Trim();
+                    Console.WriteLine(client.Query(userQuery));
+                }
             }
             Console.ReadLine();
             outputDircetory = createOutputFolder();
