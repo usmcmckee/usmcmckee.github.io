@@ -31,9 +31,8 @@ Salesforce CLI and DX, then you can run this on your organization to
 document custom object details. There results from the application can
 be seen in figure 1.
 
-![](media/image1.png)
-
-(Figure 1)
+![Figure 1](/media/image1.png)
+Format: ![Alt Text](Figure 1)
 
 # Enhancement Two – Develop Rest Services to Copy the Salesforce CLI Functionality
 
