@@ -98,7 +98,15 @@ will see examples of software development best practices. Here is a list
 of some of the content you will find: proper documentation, version
 control, Object-Oriented Design/Programming, Rest Services,
 Integrations, Security, and modern development with current technologies
-(Salesforce/.Net Core).
+(Salesforce/.Net Core). This application is used to document Salesforce object properties. Example functionilty is:
+
+- Create CSV for Object Field Propeties
+
+- Create CSV for Object Lookup to other objects
+  
+- Create CSV for Object Record Types
+
+- Provide Dynamic Quering to Live Data
 
 ## Code Review
 
