@@ -1,6 +1,6 @@
 # Contents
 
-[I. Code Review](#enhancement-one---generate-csv-for-lookup-and-record-types)
+[I. Code Review](#Code-Review)
 
 [II. Enhancement One - Generate CSV for Lookup and Record Types
 1](#enhancement-one---generate-csv-for-lookup-and-record-types)
@@ -41,11 +41,11 @@ Salesforce CLI and DX, then you can run this on your organization to
 document custom object details. There results from the application can
 be seen in figure 1.
 
-[ <img src="media/Video1Thumbnail.png" height="200" width="280"> ](https://github.com/usmcmckee/usmcmckee.github.io/blob/master/media/CodereviewChrisMcKeeP1.mp4?raw=true "Code Review Video 1 Download" )
+[<img src="media/Video1Thumbnail.png" height="200" width="280">](https://github.com/usmcmckee/usmcmckee.github.io/blob/master/media/CodereviewChrisMcKeeP1.mp4?raw=true "Code Review Video 1 Download")
 
 (Click image to download part 1 of the code review)
 
-[ <img src="media/Video2Thumbnail.png" height="200" width="280"> ](https://github.com/usmcmckee/usmcmckee.github.io/blob/master/media/CodereviewChrisMcKeeP2.mp4?raw=true "Code Review Video 2 Download" )
+[<img src="media/Video2Thumbnail.png" height="200" width="280">](https://github.com/usmcmckee/usmcmckee.github.io/blob/master/media/CodereviewChrisMcKeeP2.mp4?raw=true "Code Review Video 2 Download")
 
 (Click image to download part 2 of the code review)
 
