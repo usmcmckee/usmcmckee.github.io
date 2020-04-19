@@ -16,7 +16,13 @@ Functionality
 
 In the beginning of this project I pulled up the original source code that I wrote about 3 weeks prior. I described and critically analyzed my existing code to get an understanding of the quality and assist with evaluating the level of effort for each additional feature. After completing the review, I had a strong foundation for the quality of code and was able to plan new sprints that would incorporate new features of my backlog.
 
-allowed_elements
+[<img src="media/Video1Thumbnail.png" height="200" width="280">](https://github.com/usmcmckee/usmcmckee.github.io/blob/master/media/CodereviewChrisMcKeeP1.mp4?raw=true "Code Review Video 1 Download")
+
+(Click image to download part 1 of the code review)
+
+[<img src="media/Video2Thumbnail.png" height="200" width="280">](https://github.com/usmcmckee/usmcmckee.github.io/blob/master/media/CodereviewChrisMcKeeP2.mp4?raw=true "Code Review Video 2 Download")
+
+(Click image to download part 2 of the code review)
 
 ![Figure 1]( "Figure 1")
 
@@ -41,13 +47,8 @@ Salesforce CLI and DX, then you can run this on your organization to
 document custom object details. There results from the application can
 be seen in figure 1.
 
-[<img src="media/Video1Thumbnail.png" height="200" width="280">](https://github.com/usmcmckee/usmcmckee.github.io/blob/master/media/CodereviewChrisMcKeeP1.mp4?raw=true "Code Review Video 1 Download")
-
-(Click image to download part 1 of the code review)
-
-[<img src="media/Video2Thumbnail.png" height="200" width="280">](https://github.com/usmcmckee/usmcmckee.github.io/blob/master/media/CodereviewChrisMcKeeP2.mp4?raw=true "Code Review Video 2 Download")
-
-(Click image to download part 2 of the code review)
+![Figure 1](media/image1.png "Figure 1")
+(Figure 1)
 
 ## Enhancement Two – Develop Rest Services to Copy the Salesforce CLI Functionality
 
