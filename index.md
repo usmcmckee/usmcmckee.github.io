@@ -18,9 +18,7 @@ In the beginning of this project I pulled up the original source code that I wro
 
 allowed_elements
 
-<video autosize: true controls>
-  <source src="SalesforceObjectDetails/media/CodereviewChrisMcKeeP1" type="video/mp4">
-</video>
+![Figure 1]( "Figure 1")
 
 ## Enhancement One - Generate CSV for Lookup and Record Types
 
@@ -75,7 +73,7 @@ contain records from Salesforce.
 ![Figure 3](SalesforceObjectDetails/media/image3.png "Figure 3")
 (Figure 3)
 
-## Enhancement Three – Develop/Test Query Functionality.
+## Enhancement Three – Develop/Test Query Functionality
 
 During sprint three, I have completed all requirements phase 4 of my
 Refinement Plan and focus on the database query functionality. With the
