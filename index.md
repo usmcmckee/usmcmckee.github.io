@@ -1,37 +1,97 @@
-## Welcome to GitHub Pages
+# Contents
 
-You can use the [editor on GitHub](https://github.com/usmcmckee/usmcmckee.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+[I. Enhancement One - Generate CSV for Lookup and Record Types
+1](#enhancement-one---generate-csv-for-lookup-and-record-types)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+[II. Enhancement Two – Develop Rest Services to Copy the Salesforce CLI
+Functionality
+2](#enhancement-two-develop-rest-services-to-copy-the-salesforce-cli-functionality)
 
-### Markdown
+[III. Enhancement Three – Develop/Test Query Functionality.
+3](#enhancement-three-developtest-query-functionality.)
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+# Enhancement One - Generate CSV for Lookup and Record Types
 
-```markdown
-Syntax highlighted code block
+During sprint one, I have completed 2 of the required features for phase
+2 of my Refinement Plan. I have generated two new CSV file. The first
+one contents all of the lookups to another object. The second CSV file
+contains all record types for each Salesforce Object. In addition to the
+features, I have refactored all comments to include XML comments that
+C\# traditionally uses for documentation. The was a design flaw that I
+noticed with where the file was being stored. Now that there is three
+CSV for each file, the desktop will get disorganized. To solved this, I
+have created a new folder. This folder will contain all three CSV files,
+and the CSV file names have shortened to include only the purpose. I
+have pushed all of the code into our source control and removed and code
+or comments that could contain sensitive information. I have included a
+picture of the results. However, I cannot provide you a screenshot or
+copy of the data inside the CSV. The CSV contains my client's
+information. However, If you have a Salesforce environment and use the
+Salesforce CLI and DX, then you can run this on your organization to
+document custom object details. There results from the application can
+be seen in figure 1.
 
-# Header 1
-## Header 2
-### Header 3
+![](media/image1.png)
 
-- Bulleted
-- List
+(Figure 1)
 
-1. Numbered
-2. List
+# Enhancement Two – Develop Rest Services to Copy the Salesforce CLI Functionality
 
-**Bold** and _Italic_ and `Code` text
+During sprint two, I have completed all requirements phase 3 of my
+Refinement Plan. To develop the Rest functionality, I would need to
+authenticate the console application to a Salesforce environment (Org).
+In the past few weeks, I have been using my client's environment. Now
+that I will need to make a change, I will shift to using a Salesforce
+Developer Org. The first thing I did was to create a Connected App in
+Salesforce. This Connected App is where I set the scope of access and
+obtain the client id/secret for the application. After the Salesforce
+configuration was set, I added an App.config file to my app. The
+App.config file is where I store the Username, Password, Client ID,
+Client Secret, and additional security token used with the user
+password. As for the code, one new class was added, and additional test
+code was added to main. An open-source resource provided the new Web
+Service Class. The instructions and helper class code can be found at
+this
+[link.](https://blog.mkorman.uk/integrating-net-and-salesforce-part-1-rest-api/)
+Next phase I will begin to adjust the code to mimic the CSV output. In
+Figure 2 you can seen response from a successful connection and figure 3
+contain records from Salesforce.
 
-[Link](url) and ![Image](src)
-```
+![](media/image2.png)
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+(Figure 2)
 
-### Jekyll Themes
+![](media/image3.png)
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/usmcmckee/usmcmckee.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+(Figure 3)
 
-### Support or Contact
+# Enhancement Three – Develop/Test Query Functionality.
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+During sprint three, I have completed all requirements phase 4 of my
+Refinement Plan and focus on the database query functionality. With the
+REST call service, I developed in the previous sprint, I have been able
+to pull record custom data from a live service. Previously, the data was
+added by pulling down the information using the CLI tool and storing it
+on the locale machine. Then the record had to be parsed to pull a CSV.
+Now with the Web Services created, I can remove the manual process from
+my application. In the screenshots, you can see that Salesforce has 13
+records under the Account table. The response from the web query via the
+console application has 13 records in it. The app prompts the user if
+they would like to write a custom query (Salesforce, this is called
+SOQL). In figure 4 you can see the new code that allows the user to
+enter a custom SOQL query. Figure 5 Shows an over lay of the console
+application results on top of live Salesforce data. Lastly, Figure 6
+show the SOQL state in the developer console of Salesforce, these was
+used to valid results and test that the statements were correct.
+
+![](media/image4.png)
+
+(Figure 4)
+
+![](media/image5.png)
+
+(Figure 5)
+
+![](media/image6.png)
+
+(Figure 6)
