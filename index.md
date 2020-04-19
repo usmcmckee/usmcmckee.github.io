@@ -24,8 +24,6 @@ In the beginning of this project I pulled up the original source code that I wro
 
 (Click image to download part 2 of the code review)
 
-![Figure 1]( "Figure 1")
-
 ## Enhancement One - Generate CSV for Lookup and Record Types
 
 During sprint one, I have completed 2 of the required features for phase
