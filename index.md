@@ -31,7 +31,7 @@ Salesforce CLI and DX, then you can run this on your organization to
 document custom object details. There results from the application can
 be seen in figure 1.
 
-![Figure 1](/media/image1.png)
+![Figure 1](SalesforceObjectDetails/media/image1.png)
 Format: ![Alt Text](Figure 1)
 
 # Enhancement Two – Develop Rest Services to Copy the Salesforce CLI Functionality
@@ -56,7 +56,8 @@ Next phase I will begin to adjust the code to mimic the CSV output. In
 Figure 2 you can seen response from a successful connection and figure 3
 contain records from Salesforce.
 
-![](media/image2.png)
+![Figure 2](SalesforceObjectDetails/media/image2.png)
+Format: ![Alt Text]("Figure 2")
 
 (Figure 2)
 
