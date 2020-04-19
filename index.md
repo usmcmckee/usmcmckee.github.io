@@ -1,5 +1,7 @@
 # Contents
 
+[I. Professional Self-Assessment](#professional-self-assessment)
+
 [II. Code Review](#code-review)
 
 [III. Enhancement One - Generate CSV for Lookup and Record Types
@@ -14,7 +16,89 @@ Functionality
 
 ## Professional Self-Assessment
 
-sss
+I started my Computer Science journey back in 2013 at Central Texas
+College (CTC) while serving a Sergeant in the Marine Corps. I earned my
+associates in 2014 right before my contract with the Marines was up.
+Then I was trained by Microsoft in the Microsoft Software and Systems
+Academy (MSSA). This is where I fell in love with programming. I
+interviewed with Microsoft and was offered a role as a Network Engineer.
+I then asked Microsoft why they wouldn’t hire me as a Software
+developer; they responded saying I need a degree or years of experience.
+This was when I decided to move to Texas and attend Texas State
+University for My Computer Science Degree. Before my final semester at
+Texas State, I had my daughter and was unable to participate in a
+traditional in-person university. This was when I transferred to SNHU. I
+have a total of 194 Credits for a 121 Credit degree. Transferring from
+CTC to Texas State, I lost half of my credits. Next, I transferred to
+SNHU from Texas State and lost 1/3<sup>rd</sup> of my credits and had to
+retake the same classes. But now, after seven years, I can finally wrap
+up my Computer Science Degree.
+
+Here are the three most important things I learn in my educational
+journey:
+
+1. The ability to problem solves anything. I know this may sound easy,
+    but I currently work with a lot of MIS majors, and they all run to
+    me because of the problem-solving ability that a computer science
+    major has. I break every problem down and think about how it is
+    built. Then I understand how it works to solve the problem.
+
+2. The ability to learn any technology quickly. As a Technical
+    Consultant at my current company, I have been praised for being able
+    to jump from project to project and pick up new technologies with no
+    training. Examples of projects that I worked on just last year was:
+
+    1. Developed a plugin for MicroStrategy’s Web SDK in Java
+
+    2. Integration to Web Service for Salesforce, Oracle, Microsoft
+        using Apex and MS Graph
+
+    3. SharePoint Apps using .Net and the Power Platform (Power Apps,
+        Power Bi, and Power Automate (formally known as Flow))
+
+3. Object-Oriented Design/Programming OOD/P, although I learned this at
+    Texas State, to me, this is a single most crucial class offered by
+    any Computer Science program. If a student can truly grasp the
+    concepts of OOD/P, then they will be able to understand most
+    platforms, and their code quality will improve.
+
+My current career is as a Technical Consultant at a Data and Analytics
+Consulting firm. Once I started at SNHU, I was offered a position in
+Austin, Texas, to be a technical consultant. Seen I have been there, I
+have jump-started my career and am doing amazing things. I work on
+projects with these job titles
+
+- Solution Architect
+
+- Salesforce Developer
+
+- Enterprise Content Management Architect
+
+- Software Developer
+
+- Integration Lead
+
+- Migration Lead
+
+- SharePoint Developer
+
+My current career goal is to focus on becoming an Azure Cloud Architect
+and also becoming a top tier developer at my current company. I want to
+specialize in the Microsoft Stack. I believe it is essential to focus on
+a specific area in your career. I have found that my success at my
+current company has come from me being clear about what I want to do.
+Because I am so focused, I have gotten to know Microsoft Products and
+Services so well that I have been able to work as an Architect on
+multiple projects for my clients.
+
+The application that I developed for this eprofile demonstrates my
+ability to understand a business application and the process of
+developing software. By reviewing the code in the GitHub repository, you
+will see examples of software development best practices. Here is a list
+of some of the content you will find: proper documentation, version
+control, Object-Oriented Design/Programming, Rest Services,
+Integrations, Security, and modern development with current technologies
+(Salesforce/.Net Core).
 
 ## Code Review
 
