@@ -41,7 +41,7 @@ Salesforce CLI and DX, then you can run this on your organization to
 document custom object details. There results from the application can
 be seen in figure 1.
 
-![Figure 1](SalesforceObjectDetails/media/image1.png "Figure 1")
+![Figure 1](media/image1.png "Figure 1")
 
 (Figure 1)
 
@@ -67,10 +67,10 @@ Next phase I will begin to adjust the code to mimic the CSV output. In
 Figure 2 you can seen response from a successful connection and figure 3
 contain records from Salesforce.
 
-![Figure 2](SalesforceObjectDetails/media/image2.png "Figure 2")
+![Figure 2](media/image2.png "Figure 2")
 (Figure 2)
 
-![Figure 3](SalesforceObjectDetails/media/image3.png "Figure 3")
+![Figure 3](media/image3.png "Figure 3")
 (Figure 3)
 
 ## Enhancement Three – Develop/Test Query Functionality
@@ -92,14 +92,14 @@ application results on top of live Salesforce data. Lastly, Figure 6
 show the SOQL state in the developer console of Salesforce, these was
 used to valid results and test that the statements were correct.
 
-![Figure 4](SalesforceObjectDetails/media/image4.png "Figure 4")
+![Figure 4](media/image4.png "Figure 4")
 
 (Figure 4)
 
-![Figure 5](SalesforceObjectDetails/media/image5.png "Figure 5")
+![Figure 5](media/image5.png "Figure 5")
 
 (Figure 5)
 
-![Figure 6](SalesforceObjectDetails/media/image6.png "Figure 6")
+![Figure 6](media/image6.png "Figure 6")
 
 (Figure 6)
