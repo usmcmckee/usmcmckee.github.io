@@ -1,16 +1,28 @@
 # Contents
 
-[I. Enhancement One - Generate CSV for Lookup and Record Types
+[I. Code Review](#enhancement-one---generate-csv-for-lookup-and-record-types)
+
+[II. Enhancement One - Generate CSV for Lookup and Record Types
 1](#enhancement-one---generate-csv-for-lookup-and-record-types)
 
-[II. Enhancement Two – Develop Rest Services to Copy the Salesforce CLI
+[III. Enhancement Two – Develop Rest Services to Copy the Salesforce CLI
 Functionality
 2](#enhancement-two-develop-rest-services-to-copy-the-salesforce-cli-functionality)
 
-[III. Enhancement Three – Develop/Test Query Functionality.
+[IV. Enhancement Three – Develop/Test Query Functionality.
 3](#enhancement-three-developtest-query-functionality.)
 
-# Enhancement One - Generate CSV for Lookup and Record Types
+## Code Review
+
+In the beginning of this project I pulled up the original source code that I wrote about 3 weeks prior. I described and critically analyzed my existing code to get an understanding of the quality and assist with evaluating the level of effort for each additional feature. After completing the review, I had a strong foundation for the quality of code and was able to plan new sprints that would incorporate new features of my backlog.
+
+allowed_elements
+
+<video autosize: true controls>
+  <source src="SalesforceObjectDetails/media/CodereviewChrisMcKeeP1" type="video/mp4">
+</video>
+
+## Enhancement One - Generate CSV for Lookup and Record Types
 
 During sprint one, I have completed 2 of the required features for phase
 2 of my Refinement Plan. I have generated two new CSV file. The first
@@ -31,10 +43,11 @@ Salesforce CLI and DX, then you can run this on your organization to
 document custom object details. There results from the application can
 be seen in figure 1.
 
-![Figure 1](SalesforceObjectDetails/media/image1.png)
-Format: ![Alt Text](Figure 1)
+![Figure 1](SalesforceObjectDetails/media/image1.png "Figure 1")
 
-# Enhancement Two – Develop Rest Services to Copy the Salesforce CLI Functionality
+(Figure 1)
+
+## Enhancement Two – Develop Rest Services to Copy the Salesforce CLI Functionality
 
 During sprint two, I have completed all requirements phase 3 of my
 Refinement Plan. To develop the Rest functionality, I would need to
@@ -56,16 +69,13 @@ Next phase I will begin to adjust the code to mimic the CSV output. In
 Figure 2 you can seen response from a successful connection and figure 3
 contain records from Salesforce.
 
-![Figure 2](SalesforceObjectDetails/media/image2.png)
-Format: ![Alt Text]("Figure 2")
-
+![Figure 2](SalesforceObjectDetails/media/image2.png "Figure 2")
 (Figure 2)
 
-![](media/image3.png)
-
+![Figure 3](SalesforceObjectDetails/media/image3.png "Figure 3")
 (Figure 3)
 
-# Enhancement Three – Develop/Test Query Functionality.
+## Enhancement Three – Develop/Test Query Functionality.
 
 During sprint three, I have completed all requirements phase 4 of my
 Refinement Plan and focus on the database query functionality. With the
@@ -84,14 +94,14 @@ application results on top of live Salesforce data. Lastly, Figure 6
 show the SOQL state in the developer console of Salesforce, these was
 used to valid results and test that the statements were correct.
 
-![](media/image4.png)
+![Figure 4](SalesforceObjectDetails/media/image4.png "Figure 4")
 
 (Figure 4)
 
-![](media/image5.png)
+![Figure 5](SalesforceObjectDetails/media/image5.png "Figure 5")
 
 (Figure 5)
 
-![](media/image6.png)
+![Figure 6](SalesforceObjectDetails/media/image6.png "Figure 6")
 
 (Figure 6)
